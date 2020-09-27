@@ -1,0 +1,26 @@
+.txtArea {
+    resize: none;
+    width: 70%;
+    background-color: #ccc;
+    margin: 10px 10px;
+    outline: none;
+}
+
+.addButton {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: #ccc;
+    outline: none;
+    border-radius: 5px;
+    width: 15%;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .addButton {
+        width: 20%;
+    }
+}
