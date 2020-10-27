@@ -1,13 +1,9 @@
 import React from 'react';
 
 const DoneNotes = (props) => {
-
     let x = props.text_prop;
     let y = x.split('-');
-    // console.log(x);
-    // console.log(y);
     let z = y[1].split('at:');
-    // console.log(z)
 
     return (
         <div>

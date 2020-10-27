@@ -7,7 +7,6 @@ class Notes extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        array: [],
         toggle: false,
         arr: []
       }
@@ -29,12 +28,11 @@ class Notes extends Component {
             <div style = {{border: '2px solid #627dab'}}>
               <h3 style = {{textAlign: 'center'}}>Add your items here</h3>
               <div>
-                <AddNotes onFinalNoteChange1 = {this.handleChange1} array_prop = {this.state.array} />
+                <AddNotes onFinalNoteChange1 = {this.handleChange1} />
               </div>
             </div>
 
             <div style = {{border: '2px solid #4c2929', margin: '10px 0px'}}>
-              
               <h3 style = {{textAlign: 'center'}}>Your completed items will appear here</h3>
               <div style = {{margin: '0 10px'}}>
                 {this.state.toggle && this.state.arr.map( (data,id) => 
